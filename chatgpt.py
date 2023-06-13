@@ -1,6 +1,11 @@
-import openai 
+from dotenv import load_dotenv
 
-openai.api_key = "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"
+import openai 
+import os
+
+load_dotenv()
+
+openai.api_key = os.getenv('API_KEY')
 
 
 while True:
